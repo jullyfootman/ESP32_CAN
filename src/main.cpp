@@ -1,8 +1,3 @@
-
-// WifiでPCへ受信値を送信
-// Pythonアプリで表示　コマンド送信
-// MAC値生成まで
-
 #include <Arduino.h>
 
 #include <ESP32CAN.h>
@@ -64,7 +59,6 @@ void SerialOut(CAN_frame_t rx_frame)
 }
 
 // CANへデータ書き込み
-
 void sendData(uint16_t ID, uint8_t data[])
 {
   if (ID <= 0x7ff)

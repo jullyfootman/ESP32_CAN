@@ -47,7 +47,7 @@ static void CAN_read_frame();
 static void CAN_isr(void *arg_p);
 
 extern int volatile flag_ISR;//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<ADD
- 
+//受信した際にフラグをたててloopで処理
 static void CAN_isr(void *arg_p){
 
 	//Interrupt flag buffer
